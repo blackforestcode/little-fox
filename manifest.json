@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Little Fox",
+  "version": "1.0.0",
+  "author": "Nils Domin (aka blackforestcode)",
+  "description": "Öffnet Links in einem kleinen Popup-Fenster.",
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "activeTab",
+    "webNavigation",
+    "<all_urls>",
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true,
+    "open_in_tab": true
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
