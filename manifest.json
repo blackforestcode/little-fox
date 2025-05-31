@@ -3,6 +3,8 @@
   "name": "Little Fox",
   "version": "1.0.0",
   "author": "Nils Domin (aka blackforestcode)",
+  "homepage_url": "https://github.com/blackforestcode/little-fox",
+  "default_locale": "de",
   "description": "Öffnet Links in einem kleinen Popup-Fenster.",
   "permissions": [
     "contextMenus",
